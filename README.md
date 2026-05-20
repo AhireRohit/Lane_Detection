@@ -263,9 +263,3 @@ Very small images or unusual side-angle images may produce weak predictions.
 The LaneATT-style, CLRNet-style, and SCNN-style models in this project are lightweight segmentation-inspired versions, not exact official paper implementations. They are implemented for practical benchmarking within a unified binary segmentation pipeline.
 
 The dataset is not included in this repository. Download TuSimple separately and place it in the expected folder format.
-
-If checkpoint files are too large for GitHub, upload them to Google Drive, Hugging Face, or GitHub Releases and link them here.
-
-## Resume Bullet
-
-Built a real-time lane detection benchmarking system on 3,626 TuSimple images, comparing U-Net, CLRNet-style, LaneATT-style, and SCNN-style segmentation models; achieved 0.3889 IoU, 0.5590 F1-score, and 91.5 FPS inference with a reproducible Gradio demo.
