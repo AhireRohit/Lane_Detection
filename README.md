@@ -34,11 +34,7 @@ Best model: **U-Net**, achieving **0.3889 IoU**, **0.5590 F1-score**, and **91.5
 
 The project includes a local Gradio demo where users can upload a road image, select a model, and view the predicted lane overlay.
 
-Add your screenshot here:
-
-```markdown
 ![LaneDet Demo](assets/demo_screenshot.png)
-```
 
 ## Project Structure
 
