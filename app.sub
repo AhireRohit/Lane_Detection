@@ -1,0 +1,21 @@
+universe = docker
+docker_image = pytorch/pytorch:2.3.1-cuda12.1-cudnn8-devel
+
+executable = /bin/bash
+arguments = /home/atml_team066/Lane_detection/run_app.sh
+
+output = runlogs/app.$(ClusterId).$(ProcId).out
+error  = runlogs/app.$(ClusterId).$(ProcId).err
+log    = runlogs/app.$(ClusterId).log
+
+should_transfer_files = NO
+
+request_GPUs = 1
+request_CPUs = 2
+request_memory = 8G
+
+requirements = UidDomain == "cs.uni-saarland.de"
++WantGPUHomeMounted = true
++WantScratchMounted = true
+
+queue 1
