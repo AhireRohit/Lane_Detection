@@ -1,0 +1,12 @@
+{
+  "iou": 0.3888808832220409,
+  "f1": 0.558996240729871,
+  "precision": 0.6361787831005843,
+  "recall": 0.4991414203591969,
+  "latency_ms": 10.93,
+  "fps": 91.5,
+  "params": 7763041,
+  "size_mb": 29.61,
+  "checkpoint": "/home/atml_team066/Lane_detection/checkpoints/unet_best.pt",
+  "val_images": 362
+}
