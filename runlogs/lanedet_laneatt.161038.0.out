@@ -1,0 +1,196 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.1.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+Collecting numpy==1.26.4
+  Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 3.5 MB/s eta 0:00:00
+Collecting opencv-python-headless==4.10.0.84
+  Downloading opencv_python_headless-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting albumentations==1.4.8
+  Downloading albumentations-1.4.8-py3-none-any.whl.metadata (37 kB)
+Collecting albucore==0.0.9
+  Downloading albucore-0.0.9-py3-none-any.whl.metadata (3.1 kB)
+Collecting tqdm
+  Downloading tqdm-4.67.3-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.7/57.7 kB 46.8 MB/s eta 0:00:00
+Collecting matplotlib
+  Downloading matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 kB 191.8 MB/s eta 0:00:00
+Collecting scipy>=1.10.0 (from albumentations==1.4.8)
+  Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 60.3 MB/s eta 0:00:00
+Collecting scikit-image>=0.21.0 (from albumentations==1.4.8)
+  Downloading scikit_image-0.25.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (14 kB)
+Collecting PyYAML (from albumentations==1.4.8)
+  Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting typing-extensions>=4.9.0 (from albumentations==1.4.8)
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting scikit-learn>=1.3.2 (from albumentations==1.4.8)
+  Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting pydantic>=2.7.0 (from albumentations==1.4.8)
+  Downloading pydantic-2.13.4-py3-none-any.whl.metadata (109 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.4/109.4 kB 52.8 MB/s eta 0:00:00
+Collecting tomli>=2.0.1 (from albucore==0.0.9)
+  Downloading tomli-2.4.1-py3-none-any.whl.metadata (10 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.63.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 134.8 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading kiwisolver-1.5.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (5.1 kB)
+Collecting packaging>=20.0 (from matplotlib)
+  Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=8 (from matplotlib)
+  Downloading pillow-12.2.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting pyparsing>=3 (from matplotlib)
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting python-dateutil>=2.7 (from matplotlib)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.7.0->albumentations==1.4.8)
+  Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.4 (from pydantic>=2.7.0->albumentations==1.4.8)
+  Downloading pydantic_core-2.46.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic>=2.7.0->albumentations==1.4.8)
+  Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting networkx>=3.0 (from scikit-image>=0.21.0->albumentations==1.4.8)
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting imageio!=2.35.0,>=2.33 (from scikit-image>=0.21.0->albumentations==1.4.8)
+  Downloading imageio-2.37.3-py3-none-any.whl.metadata (9.7 kB)
+Collecting tifffile>=2022.8.12 (from scikit-image>=0.21.0->albumentations==1.4.8)
+  Downloading tifffile-2025.5.10-py3-none-any.whl.metadata (31 kB)
+Collecting lazy-loader>=0.4 (from scikit-image>=0.21.0->albumentations==1.4.8)
+  Downloading lazy_loader-0.5-py3-none-any.whl.metadata (5.9 kB)
+Collecting joblib>=1.2.0 (from scikit-learn>=1.3.2->albumentations==1.4.8)
+  Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn>=1.3.2->albumentations==1.4.8)
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 259.1 MB/s eta 0:00:00
+Downloading opencv_python_headless-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.9/49.9 MB 151.4 MB/s eta 0:00:00
+Downloading albumentations-1.4.8-py3-none-any.whl (156 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 156.8/156.8 kB 202.1 MB/s eta 0:00:00
+Downloading albucore-0.0.9-py3-none-any.whl (7.9 kB)
+Downloading tqdm-4.67.3-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.4/78.4 kB 183.4 MB/s eta 0:00:00
+Downloading matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 209.2 MB/s eta 0:00:00
+Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (325 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 325.0/325.0 kB 222.1 MB/s eta 0:00:00
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.63.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 141.4 MB/s eta 0:00:00
+Downloading kiwisolver-1.5.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 230.5 MB/s eta 0:00:00
+Downloading packaging-26.2-py3-none-any.whl (100 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.2/100.2 kB 182.1 MB/s eta 0:00:00
+Downloading pillow-12.2.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 214.8 MB/s eta 0:00:00
+Downloading pydantic-2.13.4-py3-none-any.whl (472 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.3/472.3 kB 231.2 MB/s eta 0:00:00
+Downloading pydantic_core-2.46.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 228.4 MB/s eta 0:00:00
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.8/122.8 kB 179.8 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 198.0 MB/s eta 0:00:00
+Downloading scikit_image-0.25.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.8/14.8 MB 194.5 MB/s eta 0:00:00
+Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 189.5 MB/s eta 0:00:00
+Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 214.6 MB/s eta 0:00:00
+Downloading tomli-2.4.1-py3-none-any.whl (14 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 100.9 MB/s eta 0:00:00
+Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 kB 196.7 MB/s eta 0:00:00
+Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading imageio-2.37.3-py3-none-any.whl (317 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.6/317.6 kB 219.6 MB/s eta 0:00:00
+Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.1/309.1 kB 229.5 MB/s eta 0:00:00
+Downloading lazy_loader-0.5-py3-none-any.whl (8.0 kB)
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 214.7 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading tifffile-2025.5.10-py3-none-any.whl (226 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.5/226.5 kB 202.3 MB/s eta 0:00:00
+Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Installing collected packages: typing-extensions, tqdm, tomli, threadpoolctl, six, PyYAML, pyparsing, pillow, packaging, numpy, networkx, kiwisolver, joblib, fonttools, cycler, annotated-types, typing-inspection, tifffile, scipy, python-dateutil, pydantic-core, opencv-python-headless, lazy-loader, imageio, contourpy, scikit-learn, scikit-image, pydantic, matplotlib, albucore, albumentations
+Successfully installed PyYAML-6.0.3 albucore-0.0.9 albumentations-1.4.8 annotated-types-0.7.0 contourpy-1.3.2 cycler-0.12.1 fonttools-4.63.0 imageio-2.37.3 joblib-1.5.3 kiwisolver-1.5.0 lazy-loader-0.5 matplotlib-3.10.9 networkx-3.4.2 numpy-1.26.4 opencv-python-headless-4.10.0.84 packaging-26.2 pillow-12.2.0 pydantic-2.13.4 pydantic-core-2.46.4 pyparsing-3.3.2 python-dateutil-2.9.0.post0 scikit-image-0.25.2 scikit-learn-1.7.2 scipy-1.15.3 six-1.17.0 threadpoolctl-3.6.0 tifffile-2025.5.10 tomli-2.4.1 tqdm-4.67.3 typing-extensions-4.15.0 typing-inspection-0.4.2
+torch 2.3.1
+cuda True
+Tesla P100-SXM2-16GB
+cv2 4.10.0
+numpy 1.26.4
+albumentations 1.4.8
+DATA_ROOT: /home/atml_team066/Lane_detection/train_subset_3626
+Annotations: 3626
+Missing images: 0
+device: cuda
+epoch 1/30 | loss 0.1668/0.0662 | iou 0.0713 f1 0.1325 | 108.5s
+epoch 2/30 | loss 0.0548/0.0505 | iou 0.1899 f1 0.3179 | 107.3s
+epoch 3/30 | loss 0.0465/0.0459 | iou 0.1977 f1 0.3290 | 107.5s
+epoch 4/30 | loss 0.0437/0.0433 | iou 0.2857 f1 0.4435 | 107.2s
+epoch 5/30 | loss 0.0418/0.0436 | iou 0.2557 f1 0.4061 | 106.8s
+epoch 6/30 | loss 0.0407/0.0455 | iou 0.2221 f1 0.3621 | 107.0s
+epoch 7/30 | loss 0.0395/0.0403 | iou 0.2876 f1 0.4456 | 107.0s
+epoch 8/30 | loss 0.0388/0.0395 | iou 0.2958 f1 0.4557 | 107.0s
+epoch 9/30 | loss 0.0384/0.0396 | iou 0.2722 f1 0.4269 | 107.5s
+epoch 10/30 | loss 0.0377/0.0395 | iou 0.2597 f1 0.4112 | 108.1s
+epoch 11/30 | loss 0.0373/0.0385 | iou 0.2919 f1 0.4508 | 107.6s
+epoch 12/30 | loss 0.0369/0.0393 | iou 0.2950 f1 0.4546 | 107.7s
+epoch 13/30 | loss 0.0365/0.0396 | iou 0.2982 f1 0.4583 | 107.8s
+epoch 14/30 | loss 0.0361/0.0374 | iou 0.3225 f1 0.4868 | 107.8s
+epoch 15/30 | loss 0.0359/0.0408 | iou 0.2793 f1 0.4357 | 109.0s
+epoch 16/30 | loss 0.0355/0.0379 | iou 0.3129 f1 0.4757 | 108.6s
+epoch 17/30 | loss 0.0351/0.0374 | iou 0.3126 f1 0.4753 | 108.8s
+epoch 18/30 | loss 0.0350/0.0390 | iou 0.2831 f1 0.4399 | 109.0s
+epoch 19/30 | loss 0.0347/0.0388 | iou 0.3027 f1 0.4637 | 109.2s
+epoch 20/30 | loss 0.0344/0.0363 | iou 0.3366 f1 0.5028 | 109.9s
+epoch 21/30 | loss 0.0344/0.0377 | iou 0.3153 f1 0.4785 | 109.3s
+epoch 22/30 | loss 0.0342/0.0369 | iou 0.3184 f1 0.4821 | 109.4s
+epoch 23/30 | loss 0.0339/0.0365 | iou 0.3167 f1 0.4800 | 109.0s
+epoch 24/30 | loss 0.0337/0.0370 | iou 0.3326 f1 0.4984 | 108.0s
+epoch 25/30 | loss 0.0335/0.0370 | iou 0.3296 f1 0.4950 | 106.9s
+epoch 26/30 | loss 0.0333/0.0365 | iou 0.3326 f1 0.4983 | 107.6s
+epoch 27/30 | loss 0.0332/0.0357 | iou 0.3347 f1 0.5007 | 107.4s
+epoch 28/30 | loss 0.0330/0.0368 | iou 0.3217 f1 0.4860 | 106.8s
+epoch 29/30 | loss 0.0329/0.0405 | iou 0.2879 f1 0.4459 | 107.6s
+epoch 30/30 | loss 0.0327/0.0363 | iou 0.3455 f1 0.5128 | 108.1s
+best val IoU: 0.3455
+checkpoint: /home/atml_team066/Lane_detection/checkpoints/laneatt_best.pt
+log: /home/atml_team066/Lane_detection/outputs/laneatt_train_log.json
+{
+  "iou": 0.3454653555932252,
+  "f1": 0.5127550376498181,
+  "precision": 0.6406660948110663,
+  "recall": 0.4280978603207547,
+  "latency_ms": 6.46,
+  "fps": 154.8,
+  "params": 986657,
+  "size_mb": 3.76,
+  "checkpoint": "/home/atml_team066/Lane_detection/checkpoints/laneatt_best.pt",
+  "val_images": 362
+}
+predictions: /home/atml_team066/Lane_detection/outputs/laneatt_preds
+report: /home/atml_team066/Lane_detection/outputs/laneatt_eval.json

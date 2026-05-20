@@ -1,0 +1,294 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.1.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+Found existing installation: albumentations 1.4.8
+Uninstalling albumentations-1.4.8:
+  Successfully uninstalled albumentations-1.4.8
+Found existing installation: albucore 0.0.9
+Uninstalling albucore-0.0.9:
+  Successfully uninstalled albucore-0.0.9
+Found existing installation: opencv-python-headless 4.10.0.84
+Uninstalling opencv-python-headless-4.10.0.84:
+  Successfully uninstalled opencv-python-headless-4.10.0.84
+Found existing installation: numpy 1.26.4
+Uninstalling numpy-1.26.4:
+  Successfully uninstalled numpy-1.26.4
+Collecting numpy==1.26.4
+  Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 2.3 MB/s eta 0:00:00
+Collecting opencv-python-headless==4.10.0.84
+  Downloading opencv_python_headless-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting albumentations==1.4.8
+  Downloading albumentations-1.4.8-py3-none-any.whl.metadata (37 kB)
+Collecting albucore==0.0.9
+  Downloading albucore-0.0.9-py3-none-any.whl.metadata (3.1 kB)
+Collecting tqdm
+  Downloading tqdm-4.67.3-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.7/57.7 kB 18.9 MB/s eta 0:00:00
+Collecting matplotlib
+  Downloading matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 kB 57.4 MB/s eta 0:00:00
+Collecting scipy>=1.10.0 (from albumentations==1.4.8)
+  Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 22.4 MB/s eta 0:00:00
+Collecting scikit-image>=0.21.0 (from albumentations==1.4.8)
+  Downloading scikit_image-0.25.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (14 kB)
+Collecting PyYAML (from albumentations==1.4.8)
+  Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting typing-extensions>=4.9.0 (from albumentations==1.4.8)
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting scikit-learn>=1.3.2 (from albumentations==1.4.8)
+  Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting pydantic>=2.7.0 (from albumentations==1.4.8)
+  Downloading pydantic-2.13.4-py3-none-any.whl.metadata (109 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.4/109.4 kB 34.4 MB/s eta 0:00:00
+Collecting tomli>=2.0.1 (from albucore==0.0.9)
+  Downloading tomli-2.4.1-py3-none-any.whl.metadata (10 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.63.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 217.6 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading kiwisolver-1.5.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (5.1 kB)
+Collecting packaging>=20.0 (from matplotlib)
+  Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=8 (from matplotlib)
+  Downloading pillow-12.2.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting pyparsing>=3 (from matplotlib)
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting python-dateutil>=2.7 (from matplotlib)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.7.0->albumentations==1.4.8)
+  Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.4 (from pydantic>=2.7.0->albumentations==1.4.8)
+  Downloading pydantic_core-2.46.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic>=2.7.0->albumentations==1.4.8)
+  Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting networkx>=3.0 (from scikit-image>=0.21.0->albumentations==1.4.8)
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting imageio!=2.35.0,>=2.33 (from scikit-image>=0.21.0->albumentations==1.4.8)
+  Downloading imageio-2.37.3-py3-none-any.whl.metadata (9.7 kB)
+Collecting tifffile>=2022.8.12 (from scikit-image>=0.21.0->albumentations==1.4.8)
+  Downloading tifffile-2025.5.10-py3-none-any.whl.metadata (31 kB)
+Collecting lazy-loader>=0.4 (from scikit-image>=0.21.0->albumentations==1.4.8)
+  Downloading lazy_loader-0.5-py3-none-any.whl.metadata (5.9 kB)
+Collecting joblib>=1.2.0 (from scikit-learn>=1.3.2->albumentations==1.4.8)
+  Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn>=1.3.2->albumentations==1.4.8)
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 223.7 MB/s eta 0:00:00
+Downloading opencv_python_headless-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.9/49.9 MB 207.6 MB/s eta 0:00:00
+Downloading albumentations-1.4.8-py3-none-any.whl (156 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 156.8/156.8 kB 93.1 MB/s eta 0:00:00
+Downloading albucore-0.0.9-py3-none-any.whl (7.9 kB)
+Downloading tqdm-4.67.3-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.4/78.4 kB 86.8 MB/s eta 0:00:00
+Downloading matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 126.2 MB/s eta 0:00:00
+Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (325 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 325.0/325.0 kB 222.5 MB/s eta 0:00:00
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.63.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 184.8 MB/s eta 0:00:00
+Downloading kiwisolver-1.5.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 255.7 MB/s eta 0:00:00
+Downloading packaging-26.2-py3-none-any.whl (100 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.2/100.2 kB 175.7 MB/s eta 0:00:00
+Downloading pillow-12.2.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 171.0 MB/s eta 0:00:00
+Downloading pydantic-2.13.4-py3-none-any.whl (472 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.3/472.3 kB 203.0 MB/s eta 0:00:00
+Downloading pydantic_core-2.46.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 133.8 MB/s eta 0:00:00
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.8/122.8 kB 172.6 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 120.0 MB/s eta 0:00:00
+Downloading scikit_image-0.25.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.8/14.8 MB 151.1 MB/s eta 0:00:00
+Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 170.4 MB/s eta 0:00:00
+Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 192.1 MB/s eta 0:00:00
+Downloading tomli-2.4.1-py3-none-any.whl (14 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 198.4 MB/s eta 0:00:00
+Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 kB 134.5 MB/s eta 0:00:00
+Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading imageio-2.37.3-py3-none-any.whl (317 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.6/317.6 kB 119.4 MB/s eta 0:00:00
+Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.1/309.1 kB 117.3 MB/s eta 0:00:00
+Downloading lazy_loader-0.5-py3-none-any.whl (8.0 kB)
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 126.8 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading tifffile-2025.5.10-py3-none-any.whl (226 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.5/226.5 kB 208.4 MB/s eta 0:00:00
+Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Installing collected packages: typing-extensions, tqdm, tomli, threadpoolctl, six, PyYAML, pyparsing, pillow, packaging, numpy, networkx, kiwisolver, joblib, fonttools, cycler, annotated-types, typing-inspection, tifffile, scipy, python-dateutil, pydantic-core, opencv-python-headless, lazy-loader, imageio, contourpy, scikit-learn, scikit-image, pydantic, matplotlib, albucore, albumentations
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.15.0
+    Uninstalling typing_extensions-4.15.0:
+      Successfully uninstalled typing_extensions-4.15.0
+  Attempting uninstall: tqdm
+    Found existing installation: tqdm 4.67.3
+    Uninstalling tqdm-4.67.3:
+      Successfully uninstalled tqdm-4.67.3
+  Attempting uninstall: tomli
+    Found existing installation: tomli 2.4.1
+    Uninstalling tomli-2.4.1:
+      Successfully uninstalled tomli-2.4.1
+  Attempting uninstall: threadpoolctl
+    Found existing installation: threadpoolctl 3.6.0
+    Uninstalling threadpoolctl-3.6.0:
+      Successfully uninstalled threadpoolctl-3.6.0
+  Attempting uninstall: six
+    Found existing installation: six 1.17.0
+    Uninstalling six-1.17.0:
+      Successfully uninstalled six-1.17.0
+  Attempting uninstall: PyYAML
+    Found existing installation: PyYAML 6.0.3
+    Uninstalling PyYAML-6.0.3:
+      Successfully uninstalled PyYAML-6.0.3
+  Attempting uninstall: pyparsing
+    Found existing installation: pyparsing 3.3.2
+    Uninstalling pyparsing-3.3.2:
+      Successfully uninstalled pyparsing-3.3.2
+  Attempting uninstall: pillow
+    Found existing installation: pillow 12.2.0
+    Uninstalling pillow-12.2.0:
+      Successfully uninstalled pillow-12.2.0
+  Attempting uninstall: packaging
+    Found existing installation: packaging 26.2
+    Uninstalling packaging-26.2:
+      Successfully uninstalled packaging-26.2
+  Attempting uninstall: networkx
+    Found existing installation: networkx 3.4.2
+    Uninstalling networkx-3.4.2:
+      Successfully uninstalled networkx-3.4.2
+  Attempting uninstall: kiwisolver
+    Found existing installation: kiwisolver 1.5.0
+    Uninstalling kiwisolver-1.5.0:
+      Successfully uninstalled kiwisolver-1.5.0
+  Attempting uninstall: joblib
+    Found existing installation: joblib 1.5.3
+    Uninstalling joblib-1.5.3:
+      Successfully uninstalled joblib-1.5.3
+  Attempting uninstall: fonttools
+    Found existing installation: fonttools 4.63.0
+    Uninstalling fonttools-4.63.0:
+      Successfully uninstalled fonttools-4.63.0
+  Attempting uninstall: cycler
+    Found existing installation: cycler 0.12.1
+    Uninstalling cycler-0.12.1:
+      Successfully uninstalled cycler-0.12.1
+  Attempting uninstall: annotated-types
+    Found existing installation: annotated-types 0.7.0
+    Uninstalling annotated-types-0.7.0:
+      Successfully uninstalled annotated-types-0.7.0
+  Attempting uninstall: typing-inspection
+    Found existing installation: typing-inspection 0.4.2
+    Uninstalling typing-inspection-0.4.2:
+      Successfully uninstalled typing-inspection-0.4.2
+  Attempting uninstall: tifffile
+    Found existing installation: tifffile 2025.5.10
+    Uninstalling tifffile-2025.5.10:
+      Successfully uninstalled tifffile-2025.5.10
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.15.3
+    Uninstalling scipy-1.15.3:
+      Successfully uninstalled scipy-1.15.3
+  Attempting uninstall: python-dateutil
+    Found existing installation: python-dateutil 2.9.0.post0
+    Uninstalling python-dateutil-2.9.0.post0:
+      Successfully uninstalled python-dateutil-2.9.0.post0
+  Attempting uninstall: pydantic-core
+    Found existing installation: pydantic_core 2.46.4
+    Uninstalling pydantic_core-2.46.4:
+      Successfully uninstalled pydantic_core-2.46.4
+  Attempting uninstall: lazy-loader
+    Found existing installation: lazy-loader 0.5
+    Uninstalling lazy-loader-0.5:
+      Successfully uninstalled lazy-loader-0.5
+  Attempting uninstall: imageio
+    Found existing installation: ImageIO 2.37.3
+    Uninstalling ImageIO-2.37.3:
+      Successfully uninstalled ImageIO-2.37.3
+  Attempting uninstall: contourpy
+    Found existing installation: contourpy 1.3.2
+    Uninstalling contourpy-1.3.2:
+      Successfully uninstalled contourpy-1.3.2
+  Attempting uninstall: scikit-learn
+    Found existing installation: scikit-learn 1.7.2
+    Uninstalling scikit-learn-1.7.2:
+      Successfully uninstalled scikit-learn-1.7.2
+  Attempting uninstall: scikit-image
+    Found existing installation: scikit-image 0.25.2
+    Uninstalling scikit-image-0.25.2:
+      Successfully uninstalled scikit-image-0.25.2
+  Attempting uninstall: pydantic
+    Found existing installation: pydantic 2.13.4
+    Uninstalling pydantic-2.13.4:
+      Successfully uninstalled pydantic-2.13.4
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.10.9
+    Uninstalling matplotlib-3.10.9:
+      Successfully uninstalled matplotlib-3.10.9
+Successfully installed PyYAML-6.0.3 albucore-0.0.9 albumentations-1.4.8 annotated-types-0.7.0 contourpy-1.3.2 cycler-0.12.1 fonttools-4.63.0 imageio-2.37.3 joblib-1.5.3 kiwisolver-1.5.0 lazy-loader-0.5 matplotlib-3.10.9 networkx-3.4.2 numpy-1.26.4 opencv-python-headless-4.10.0.84 packaging-26.2 pillow-12.2.0 pydantic-2.13.4 pydantic-core-2.46.4 pyparsing-3.3.2 python-dateutil-2.9.0.post0 scikit-image-0.25.2 scikit-learn-1.7.2 scipy-1.15.3 six-1.17.0 threadpoolctl-3.6.0 tifffile-2025.5.10 tomli-2.4.1 tqdm-4.67.3 typing-extensions-4.15.0 typing-inspection-0.4.2
+2.3.1
+True
+Tesla P100-SXM2-16GB
+cv2 4.10.0
+numpy 1.26.4
+albumentations 1.4.8
+device: cuda
+epoch 1/25 | loss 0.2545/0.1396 | iou 0.0000 f1 0.0000 | 235.2s
+epoch 2/25 | loss 0.0973/0.0804 | iou 0.0000 f1 0.0000 | 233.7s
+epoch 3/25 | loss 0.0763/0.0741 | iou 0.0010 f1 0.0019 | 233.4s
+epoch 4/25 | loss 0.0708/0.0712 | iou 0.0032 f1 0.0064 | 234.5s
+epoch 5/25 | loss 0.0684/0.0692 | iou 0.0031 f1 0.0062 | 234.3s
+epoch 6/25 | loss 0.0672/0.0692 | iou 0.0097 f1 0.0192 | 234.2s
+epoch 7/25 | loss 0.0668/0.0710 | iou 0.0221 f1 0.0432 | 234.4s
+epoch 8/25 | loss 0.0655/0.0689 | iou 0.0104 f1 0.0204 | 233.8s
+epoch 9/25 | loss 0.0648/0.0690 | iou 0.0124 f1 0.0244 | 233.6s
+epoch 10/25 | loss 0.0641/0.0693 | iou 0.0594 f1 0.1116 | 232.5s
+epoch 11/25 | loss 0.0636/0.0686 | iou 0.0364 f1 0.0701 | 232.0s
+epoch 12/25 | loss 0.0630/0.0883 | iou 0.0006 f1 0.0013 | 231.9s
+epoch 13/25 | loss 0.0624/0.0672 | iou 0.0468 f1 0.0891 | 232.7s
+epoch 14/25 | loss 0.0619/0.0664 | iou 0.0543 f1 0.1027 | 232.4s
+epoch 15/25 | loss 0.0614/0.0732 | iou 0.0808 f1 0.1489 | 231.8s
+epoch 16/25 | loss 0.0611/0.0636 | iou 0.0518 f1 0.0982 | 232.0s
+epoch 17/25 | loss 0.0608/0.0650 | iou 0.0593 f1 0.1115 | 232.0s
+epoch 18/25 | loss 0.0602/0.0648 | iou 0.0857 f1 0.1572 | 231.6s
+epoch 19/25 | loss 0.0601/0.0723 | iou 0.0406 f1 0.0776 | 231.7s
+epoch 20/25 | loss 0.0600/0.0619 | iou 0.1073 f1 0.1931 | 231.9s
+epoch 21/25 | loss 0.0594/0.0603 | iou 0.1198 f1 0.2133 | 232.5s
+epoch 22/25 | loss 0.0594/0.0610 | iou 0.0878 f1 0.1610 | 233.1s
+epoch 23/25 | loss 0.0589/0.0738 | iou 0.0139 f1 0.0273 | 233.3s
+epoch 24/25 | loss 0.0588/0.0616 | iou 0.1264 f1 0.2237 | 233.4s
+epoch 25/25 | loss 0.0585/0.0636 | iou 0.0777 f1 0.1437 | 233.1s
+best val IoU: 0.1264
+checkpoint: /home/atml_team066/Lane_detection/checkpoints/unet_best.pt
+log: /home/atml_team066/Lane_detection/outputs/unet_train_log.json
