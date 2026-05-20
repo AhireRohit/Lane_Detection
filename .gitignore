@@ -1,0 +1,41 @@
+# Virtual environment
+lanedet_app/
+
+# Model checkpoints (large files)
+checkpoints/*.pt
+checkpoints/*.pth
+checkpoints/*.h5
+checkpoints/*.pkl
+
+# Output directories
+outputs/
+flagged/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Data
+train_subset_*/
+test_subset_*/
+data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
