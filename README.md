@@ -88,7 +88,12 @@ LaneDet/
 │   ├── laneatt_seg.py
 │   └── scnn.py
 ├── requirements.txt
-└── README.md
+└── app.sub
+└── evaluate.sub
+└── evaluate_clrnet.sub
+└── evaluate_laneatt.sub
+└── evaluate_scnn.sub
+└── run_app.sh
 ```
 
 ## Dataset
